@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page CV</title>
+    <!-- favicon SVG (modifique o arquivo `favicon.svg` ou troque por .ico/.png) -->
+    <link rel="icon" href="images/job-seeker.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px
+        }
+        /* LINHA do topo — personalize cor, espessura e largura aqui */
+        .top-line {
+            width: 60%;             /* largura da linha (altere para 100% / 40% ...) */
+            height: 2px;            /* espessura */
+            background: #222;       /* cor */
+            border-radius: 2px;     /* cantos levemente arredondados */
+        }
+        .subtitle {
+            color: rgb(2, 192, 2);
+        }
+        .school-color-text {
+            color: rgb(2, 106, 192);
+        }
+        p {
+            font-size: 24px;
+        }
+        .address {
+            font-style: normal;
+            line-height: 2.0;
+        }
+        .address a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .contato {
+            display: inline-block;
+            transition: transform 0.5s ease-in-out;
+        }
+        .contato:hover {
+            transform: scale(1.2);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+  <div class="cv">
+    <div class="top-line" aria-hidden="true"></div>
+
+    <header class="cv-header">
+      <section>
+          <h1>Victor Aviz Costa e Silva</h1>
+          <h2 class="subtitle">Junior Frontend Developer</h2>
+      </section>
+      
+      <address class="address">
+          <a href="https://www.google.com/maps/place/R.+dos+Palmitos+-+Ipiranguinha,+Ubatuba+-+SP,+11680-000/@-23.4276377,-45.1193902,17z/data=!3m1!4b1!4m6!3m5!1s0x94cd502a28342941:0x5e14d49e99f06585!8m2!3d-23.4276377!4d-45.1168153!16s%2Fg%2F11cm1qwmt2?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+              Rua dos palmitos, 197<br/>
+              Ubatuba, SP - 11693-122 <br>
+          </a>
+          <a href="tel:(12) 987083081" class="contato">(12) 987083081</a> <br>
+          <a href="mailto:joweedaviz@gmail.com" class="contato">joweedaviz@gmail.com</a> <br>
+      </address>
+
+    </header>
+
+    <main class="cv-content">
+      <h2 class="subtitle">
+        Habilidades
+      </h2>
+        <ul>
+            <li>
+                HTML
+            </li>
+            <li>
+                CSS
+            </li>
+        </ul>
+      <h2 class="subtitle">Graduação</h2>
+      <p class="school-color-text">Escola Estadual Capitão Deolindo de Oliveira Santos</p>
+      <p>Término em 2016</p>
+      <h2 class="subtitle">Experiências</h2>
+      <p>Sem experiência profissional</p>
+    </main>
+  </div>
+</body>
+</html>
