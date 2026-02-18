@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single Page CV</title>
+    <title>Victor Aviz | Desenvolvedor Frontend Júnior</title>
     <!-- favicon SVG (modifique o arquivo `favicon.svg` ou troque por .ico/.png) -->
-    <link rel="icon" href="images/job-seeker.png" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="icon" href="images/job-seeker.png" type="image/png">
     <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Currículo de Victor Aviz Costa e Silva, Desenvolvedor Frontend Júnior especializado em HTML e CSS.">
+    <meta name="keywords" content="Victor Aviz, Desenvolvedor Frontend, HTML, CSS, Junior Frontend Developer">
+    <meta name="author" content="Victor Aviz Costa e Silva">
+
+    <meta property="og:title" content="Victor Aviz - Junior Frontend Developer">
+    <meta property="og:description" content="Currículo online de Victor Aviz Costa e Silva, Desenvolvedor Frontend Júnior.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seudominio.com">
+    <meta property="og:image" content="https://seudominio.com/images/preview.png">
+
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -50,8 +60,13 @@
             padding: 0;
             margin: 0;
         }
+
+        .habilidades {
+            gap: 10px;
+            line-height: 2.0;
     </style>
 </head>
+
 <body>
   <div class="cv">
     <div class="top-line" aria-hidden="true"></div>
@@ -67,30 +82,41 @@
               Rua dos palmitos, 197<br/>
               Ubatuba, SP - 11693-122 <br>
           </a>
-          <a href="tel:(12) 987083081" class="contato">(12) 987083081</a> <br>
+          <a href="tel:+5512987083081" class="contato">(12) 987083081</a> <br>
           <a href="mailto:joweedaviz@gmail.com" class="contato">joweedaviz@gmail.com</a> <br>
       </address>
 
     </header>
 
     <main class="cv-content">
-      <h2 class="subtitle">
-        Habilidades
-      </h2>
-        <ul>
-            <li>
-                HTML
-            </li>
-            <li>
-                CSS
-            </li>
-        </ul>
-      <h2 class="subtitle">Graduação</h2>
-      <p class="school-color-text">Escola Estadual Capitão Deolindo de Oliveira Santos</p>
-      <p>Término em 2016</p>
-      <h2 class="subtitle">Experiências</h2>
-      <p>Sem experiência profissional</p>
+      
+        <section>
+            <h2 class="subtitle">
+                Habilidades
+            </h2>
+            <ul class="habilidades">
+                <li>
+                    HTML
+                </li>
+                <li>
+                    CSS
+                </li>
+            </ul>
+        </section>
+      <section>
+          <h2 class="subtitle">Graduação</h2>
+          <p class="school-color-text">Escola Estadual Capitão Deolindo de Oliveira Santos</p>
+          <p>Término em 2016</p>
+      </section>
+      <section>
+          <h2 class="subtitle">Experiências</h2>
+          <p>Sem experiência profissional</p>
+      </section>
     </main>
+
+    <footer>
+        <p>Desenvolvido com HTML puro.</p>
+    </footer>
   </div>
 </body>
 </html>
